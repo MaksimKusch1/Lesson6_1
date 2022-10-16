@@ -56,10 +56,25 @@ public class Main {
                 cloneOfanimals2
         };
 
+
+
+
         System.out.println("Створено "+AllAnimals.length+" об'єктів в масиві AllAnimals");
 
-        for(int i=1; i<=AllAnimals.length; i++)
-            System.out.println(i+" "+AllAnimals[i-1].getName()+"("+AllAnimals[i-1].getYearOfFound()+")");
+//        for(int i=1; i<=AllAnimals.length; i++)
+//            System.out.println(i+" "+AllAnimals[i-1].getName()+"("+AllAnimals[i-1].getYearOfFound()+")");
+
+        for(Animals Allanimals : AllAnimals){
+            System.out.println(Allanimals.getName()+" ("+Allanimals.getYearOfFound()+")");
+        }
+
+        Arrays.sort(AllAnimals);
+
+        for(Animals Allanimals : AllAnimals){
+            System.out.println(Allanimals.getName()+" ("+Allanimals.getYearOfFound()+")");
+        }
+
+
 
         ////Ще дописати сортування
 
